@@ -5,4 +5,8 @@ services:
     image: telegraf-snmp
     build: .
     ports:
-      - 161/UDP:161/UDP
+      - 8125:8125
+      - 8092:8092
+      - 8094:8094
+    volumes:
+      - c:\dockerdev\apps\telegraf-snmp\telegraf.conf:/etc/telegraf/telegraf.conf
