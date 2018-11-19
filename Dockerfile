@@ -1,6 +1,6 @@
 FROM telegraf:alpine
 
-RUN apk add --no-cache --virtual .build-deps net-snmp
+RUN apk add --no-cache --virtual .build-deps net-snmp net-snmp-tools
 
 EXPOSE 8125/udp 8092/udp 8094
 
