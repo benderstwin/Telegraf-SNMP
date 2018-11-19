@@ -1,0 +1,8 @@
+version: '2.1'
+
+services:
+  telegraf-snmp:
+    image: telegraf-snmp
+    build: .
+    ports:
+      - 161/UDP:161/UDP

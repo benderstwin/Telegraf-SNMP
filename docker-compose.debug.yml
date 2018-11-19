@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  telegraf-snmp:
+    image: telegraf-snmp
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 161/UDP:161/UDP
